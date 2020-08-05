@@ -42,7 +42,7 @@ body {
 }
 
 body, input, button, textarea {
-    font: 500 1.6 Poppins;
+    font: 500 1.6rem Poppins;
 }
 
 .container {
