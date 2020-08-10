@@ -2,7 +2,11 @@
 
  const app = express()
 
- app.get('/users', (request, response) => {
+ app.use(express.json())
+
+ app.post('/users', (request, response) => {
+     console.log(request.body)
+
     const users = [
         {name: 'Doritos', age: 3},
         {name: 'Duna', age: 6}
