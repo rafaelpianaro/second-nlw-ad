@@ -3,7 +3,11 @@
  const app = express()
 
  app.get('/users', (request, response) => {
-     return response.send('Hello World')
+    const users = [
+        {name: 'Doritos', age: 3},
+        {name: 'Duna', age: 6}
+    ] 
+    return response.json(users)
  })
 
  app.listen(3333)
