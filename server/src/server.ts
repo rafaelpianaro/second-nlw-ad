@@ -4,7 +4,7 @@
 
  app.use(express.json())
 
- app.post('/users', (request, response) => {
+ app.get('/users', (request, response) => {
      console.log(request.body)
 
     const users = [
